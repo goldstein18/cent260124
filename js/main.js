@@ -5,6 +5,10 @@ function isMobileDevice() {
     return /Mobi|Android/i.test(navigator.userAgent);
 }
 
+function isMobileDevice() {
+    return window.innerWidth <= 768;
+}
+
 if (isMobileDevice()) {
     document.querySelectorAll('*').forEach(function(elem) {
         if (window.getComputedStyle(elem).backgroundImage !== 'none') {
@@ -13,7 +17,6 @@ if (isMobileDevice()) {
         }
     });
 
-    // This also includes elements with inline background-image styles
     document.querySelectorAll('[style]').forEach(function(elem) {
         if (elem.style.backgroundImage) {
             elem.style.backgroundImage = 'none';
@@ -21,3 +24,4 @@ if (isMobileDevice()) {
         }
     });
 }
+

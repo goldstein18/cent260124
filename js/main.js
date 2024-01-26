@@ -2,11 +2,7 @@ function sh(){const over=document.getElementById("overlay3");over.style.display=
 
 
 function isMobileDevice() {
-    return /Mobi|Android/i.test(navigator.userAgent);
-}
-
-function isMobileDevice() {
-    return window.innerWidth <= 768;
+    return 'ontouchstart' in document.documentElement || /Mobi|Android/i.test(navigator.userAgent);
 }
 
 if (isMobileDevice()) {
@@ -24,4 +20,3 @@ if (isMobileDevice()) {
         }
     });
 }
-

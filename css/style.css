@@ -428,6 +428,10 @@ header ul li a:hover {
   header .btn {
     bottom: 20%;
   }
+   main, #calc, header, section, article,footer {
+    background-image: none;
+    background-color: #061437;
+  }
 }
 @media screen and (max-width: 500px) {
   header .main_heading {
@@ -453,6 +457,10 @@ header ul li a:hover {
   }
   form input {
     width: 100%;
+  }
+   main, #calc, header, section, article,footer {
+    background-image: none;
+    background-color: #061437;
   }
 }
 @media screen and (max-width: 400px) {
@@ -482,6 +490,10 @@ header ul li a:hover {
   header .main_heading {
     font-size: 8px;
     /* left: 34%; */
+  }
+   main, #calc, header, section, article,footer {
+    background-image: none;
+    background-color: #061437;
   }
 }
 
